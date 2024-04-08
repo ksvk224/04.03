@@ -1,0 +1,98 @@
+body {
+    font-family: "Noto sans KR";
+    margin: 0;
+    height: 2000px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: rgb(255, 218, 224);
+}
+
+.wrapper {
+    padding-top: 88px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+h1 {
+    color: rgb(255, 149, 166);
+    font-size: 48px;
+}
+h2 {
+    font-size:  32px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.btns {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.btns .container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #242122;
+}
+
+.btns_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.btns_menu .btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #193a40;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 4px;
+    cursor: pointer;
+    background-color: #ff98a9;
+}
+
+.btns_menu .btn:hover {
+    background-color: white;
+    border: 1px soild #fff;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.arrow-up {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: rgb(255, 76, 115);
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: .3s;
+
+}
+.arrow-up span {
+    font-size: 50px;
+}
+
+.arrow-up.show {
+    opacity: 1;
+}
